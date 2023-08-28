@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'animate.css';
+
+:root {
+  --animate-duration: 2s;
+  // --animate-delay: 1s;
+  // --animate-repeat: 1;
+}
+
+.skillBox {
+  overflow: hidden;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1682687981630-cefe9cd73072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}

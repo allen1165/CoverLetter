@@ -1,0 +1,753 @@
+<nz-drawer nzWidth="15vw" [nzClosable]="false" [nzVisible]="tocVisible" nzPlacement="left" nzTitle="Anchor"
+  (nzOnClose)="tocClose()">
+  <ng-container *nzDrawerContent>
+
+    <p class="ant-anchor-link">
+      <a href="#Experience" (click)="tocClose()">Experience</a>
+    </p>
+    <div class="anchorBox">
+      <p class="ant-anchor-link">
+        <a href="#新達科技" (click)="tocClose()">新達科技 Shinda Tech</a>
+      </p>
+      <p class="ant-anchor-link">
+        <a href="#良興購物網" (click)="tocClose()">良興購物網 EcLife</a>
+      </p>
+    </div>
+
+    <p class="ant-anchor-link">
+      <a href="#SideProject" (click)="tocClose()">Side Project</a>
+    </p>
+    <p class="ant-anchor-link">
+      <a href="#Education" (click)="tocClose()">Education</a>
+    </p>
+    <div class="anchorBox">
+      <p class="ant-anchor-link">
+        <a href="#職業訓練局" (click)="tocClose()">職業訓練局</a>
+      </p>
+      <p class="ant-anchor-link">
+        <a href="#輔仁大學景觀建築系" (click)="tocClose()">輔仁大學景觀建築系</a>
+      </p>
+      <p class="ant-anchor-link">
+        <a href="#義守大學資訊管理系" (click)="tocClose()">義守大學資訊管理系</a>
+      </p>
+    </div>
+  </ng-container>
+</nz-drawer>
+
+<button *ngIf="!isMobile" class="leftBtn" nz-button nzType="primary" (click)="tocOpen()">
+  <span style="writing-mode: vertical-lr">Table of Contents</span>
+</button>
+
+<div class="animate__animated animate__fadeIn mainBox">
+  <div nz-row class="aic mb2">
+    <div nz-col nzSpan="12" nzMd="12" nzXs="24" nzSm="24">
+      <div class="df infoBox">
+        <img width="200"
+          src="https://media.licdn.com/dms/image/D5603AQE1mWGz8kXPXA/profile-displayphoto-shrink_200_200/0/1668756069251?e=1698278400&amp;v=beta&amp;t=NIUADghEgLH-fmD4MDGHZ1DXdBss5sQnq4ijlRymc64"
+          height="200" alt="yu_cheng (Allen) Liu" style="border-radius: 50%;">
+        <div class="df fdc jcc">
+          <h1>yu_cheng (Allen) Liu</h1>
+          <h2>Software Engineer | Frontend Developer</h2>
+        </div>
+        <div *ngIf="isMobile">
+          <p><a href="tel:+886-0912-089-608">Phone：+886-0912-089-608</a></p>
+          <p><a href="mailto:sjmjgd1165@gmail.com">Mail：sjmjgd1165@gmail.com</a></p>
+          <p><a href="https://line.me/ti/p/Ii9J-WBdq6">LineId：lyc1165</a></p>
+        </div>
+      </div>
+    </div>
+    <div nz-col nzSpan="12" nzMd="12" nzXs="24" nzSm="24">
+      <div class="githubImg">
+        <img src="https://github-readme-stats.vercel.app/api?username=johch3n611u&layout=compact" width="50%">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=johch3n611u" width="50%" />
+      </div>
+      <h2 style="margin-top: 2rem;">SKILL：</h2>
+      <div class="skillBox">
+        <app-swiper-demo></app-swiper-demo>
+        <!-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+          alt="csharp" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
+          alt="dotnet" width="25" height="25" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1051px-Adobe_Photoshop_CC_icon.svg.png"
+          alt="photoshop" width="25" height="25" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
+          alt="illustrator" width="25" height="25" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/SketchUp-Logo.png" alt="sketchUp" width="25"
+          height="25" />
+        <img src="https://seeklogo.com/images/L/lumion-3d-logo-948AF388BD-seeklogo.com.png" alt="lumion" width="25"
+          height="25" />
+        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="25" height="25" />
+        <img src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png" alt="firebase" width="25"
+          height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+          alt="javascript" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+          alt="typescript" width="25" height="25" />
+        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="25" height="25" />
+        <img src="https://www.vectorlogo.zone/logos/hexoio/hexoio-icon.svg" alt="hexo" width="25" height="25" />
+        <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="25"
+          height="25" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Oracle_Logo.svg/1200px-Oracle_Logo.svg.png"
+          alt="oracle" width="25" height="20" />
+        <img src="https://dbeaver.com/img/dbeaver-head.png" alt="dbeaver" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+          alt="nodejs" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
+          alt="redis" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx"
+          width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+          alt="mysql" width="25" height="25" />
+        <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java"
+          width="25" height="25" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" alt="ionic" width="25"
+          height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+          alt="docker" width="25" height="25" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js"
+          width="25" height="25" />
+        <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="25" height="25" />
+        <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="25"
+          height="25" /> -->
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div nz-row class="mt3">
+    <div nz-col nzSpan="12" nzMd="12" nzXs="24" nzSm="24">
+      <p>Explicit is better than implicit 🖖 歡迎互相交流</p>
+      <br>
+      <p>具有約三年多的程式開發經驗，</p>
+      <p>目前專注於前端開發與後端系統架構，</p>
+      <p>熱衷接觸掌握新知，具備溝通與協作開發能力；</p>
+      <p>持續精進程式的可用性、可維護性、可擴充性，</p>
+      <p>以結果為導向，以使用者為中心，享受解決問題的成就感。</p>
+      <br>
+    </div>
+    <div nz-col nzSpan="12" nzMd="12" nzXs="24" nzSm="24" class="shoolBox">
+      <p>系統開發整合乙方 3+y ( 網站前後端開發、API串接 )</p>
+      <p>電子商務甲方 1+y ( 品牌代營運網站開發、內部系統維運 )</p>
+      <p>遠端、分流協作 14 個月內完成 6 個中大型專案</p>
+      <p>MBTI : INTP : 學者型 - 理性解決問題者</p>
+      <p>PDP : 貓頭鷹：內斂精確完美、中立適應性高</p>
+      <p><img src="https://ci.isu.edu.tw/prev/img/ISU_logo4.png" alt="isu" width="15" height="15" /> 義守大學資訊管理系 1y ( 程式 )
+      </p>
+      <p><img src="https://summercourse.fju.edu.tw/statics/img/logo.png" alt="fju" width="15" height="15" /> 輔仁大學景觀建築系
+        4y
+        ( 規劃、設計、23D 繪圖 )</p>
+    </div>
+  </div>
+  <div nz-row class="mt3">
+    <table style="width: 100%;" class="rwdTable">
+      <tr>
+        <td valign="top" width="25%">
+          <h2>F2E</h2>
+          <p>◉ Angular2 ( 3+y )</p>
+          <p>◉ Vue2 ( 1+y )</p>
+          <p>◉ PrimeNG / MaterialUI / Ngx-admin</p>
+          <p>◉ SASS / TypeScript</p>
+          <p>◉ JS Lib ( jQuery、Chart、Three、D3 ) etc...</p>
+        </td>
+        <td valign="top" width="25%">
+          <h2>B2E</h2>
+          <p>◉ Net. Core ( 4+y ) / MVC / WebAPI</p>
+          <p>◉ MS SQL ( 3+y )</p>
+          <p>◉ AOP / IOC / Unit Test / Dapper / Quartz.NET / RabbitMQ</p>
+          <p>◉ C# ( 4+y ) / VB ( 1+y )</p>
+          <p>◉ Oracle ( 1+y ) etc...</p>
+        </td>
+        <td valign="top" width="25%">
+          <h2>Tool</h2>
+          <p>◉ Git ( Github / Git Flow ) / SourceTree / Jenkins / IIS / Nginx</p>
+          <p>◉ Redmine / Jira / Asana / Trello / Slack</p>
+          <p>◉ Azure / Swagger / Postman etc...</p>
+        </td>
+        <td valign="top" width="25%">
+          <h2>Other</h2>
+          <p>◉ Electron.net / Firebase / DBeaver / Figma /</p>
+          <p>◉ Adobe (XD、PS、AI) / AutoCad / Sketchup / Lumion etc...</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br><br><br>
+  <h2 id="Experience">Experience</h2>
+  <hr>
+  <div #yourElement1 nz-row class="mt3" id="新達科技">
+    <div nz-row>
+      <p>✦ <a href="http://www.shinda.com.tw" target="_blank">新達科技 Shinda Tech</a> , Sr. Software Developer , 電腦系統整合服務業
+        30~100 人 , Jun 2020 ~ Sep 2022</p>
+
+      <p>公司為系統開發、整合之乙方公司，專案多為上游公司發包之上市櫃客製化需求軟體，公司定期舉辦研討會由同仁分享技術與經驗，小組內協同其餘工程、設計師、專案經理，配合看板管理，敏捷 Scrum 專案開發、CICD
+        維護管理，轉換原因:職涯規劃。</p>
+
+      <br>
+
+      <details style="width: 100%;">
+        <br><br><br>
+        <h3>日常開發與維護</h3>
+        <hr>
+
+        <p>1.在職期間經歷 7 輪上市櫃公司專案，開發維護 12 個中大型專案</p>
+        <p>3.協同小組四人從 SRS、Use case 檢討、測試需求、教育訓練等工作</p>
+        <p>4.團隊利用 G-Meet 與其餘 G-雲應用程式遠端協作、看板管理指派任務、Git Sourcetree 版本控制</p>
+        <p>5.工程師團隊從前端、後端至資料庫與架站、排程皆有參與並依照 SRS / Spec 與各種工作流程檢討並改進</p>
+        <p>6.依照 Redmine / SharePoint Issue 與客戶溝通並完成開發與維護</p>
+        <p>7.公司 ( 小組 / 兩禮拜 ) 分享站立研討會內容如連結<a
+            href="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Cinda/Seminar.md">Seminar.md</a>負責過
+          IOC/DI、Unit Test 研討</p>
+        <p>8.遠端、分流協作 14 個月完成 6 個中大型專案</p>
+        <br><br>
+        <h3>工作技能</h3>
+        <hr>
+        <p>> Angular2 / ASP.NET / MVC / WebForm / WebAPI / NET Core / Vue.js / C# / SPA / CSR / MPA / SSR etc ...</p>
+
+        <br>
+        <p>* [遠端經驗]</p>
+        <p>* 疫情關係 WFH 遠端協作 `2021/03 - 2022/03`、分流協作 `2022/04 - 2022/06`</p>
+        <p>* 在同步與非同步遠端的狀況下完成專案</p>
+        <p>* 整合不同工具 SOP 與同事協作 Google ( Meet / Sheet / Docs ...)、Citrix、Sourcetree、Redmine</p>
+        <p>* 遠端、分流協作 14 個月完成 6 個中大型專案</p>
+        <br>
+
+        <details id="api">
+          <summary>[2020/06 - 2022/04] <a href="https://www.mxic.com.tw/zh-tw/Pages/default.aspx">旺宏電子公司</a>
+            入口平台與各流程管理平台
+            e.g. 帳號、軟體、設備管理</summary>
+          <hr>
+          <p>*【EIP 串接 SAM、PAM、NAM 與其餘平台】</p>
+          <p>* 開發/維護 .NET WebAPI ( C# / Autofac / AutoMap / Dapper / 單元整合測試 ) / AG ( i18n / PrimeNG )</p>
+          <p>* 面對同時千人的高併發使用的系統，透過資料庫、執行緒鎖、訊息佇列、非同步的方式，提高響應速度</p>
+          <p>* 多種不同 ( 類型、流程、職級、海內外 ) 表單以簡單工廠模式搭配物件導向，結合 IOC、DI 使攏長程式碼減少、方便維護與理解複雜商業邏輯</p>
+          <p>* 串接整合不同系同如 AD、自動化、BAT、排成器、NAC、BPM、SAM</p>
+          <p>* 根據 SRS 規格書提供 spec. 應用並配合 DEV、UAT、QAS、PRD 開發階段進行開發與測試、文件 UTR SITR SAD SDD 技術移轉文件 撰寫</p>
+
+        </details>
+
+        <details>
+          <summary>[2021/10 - 2022/10] <a href="https://www.jean.com.tw/tw/default">新美齊不動產公司</a> 前後端分離前台 & CMS/CRM 後台
+          </summary>
+          <hr>
+          <p>* 【EIP 官網 & 後台 CMS】 ( 維護 Webform ) `2021/10 - 2021/11`</p>
+          <p>* 在沒有良好的版控舊程式碼下，維護 Webform、jQuery、私有元件庫，並轉為 Git 版控</p>
+          <p>* 【房仲官網 & 後台 CMS】 ( 開發/維護 AG + .NET CORE API ) `2021/10 - 2022/10`</p>
+          <p>* 利用 Ngx-admin 架構開發後台房源上架 CMS、CRM 系統</p>
+          <p>* 後台拖移式排序上架介面優化使用者 UX</p>
+          <p>* 串接 GoogleMapApi 整合房源資料用於大數據分析</p>
+          <p>* 爬取內政部實價登錄資料用於大數據分析、並將資料視覺化、流程排程化</p>
+          <p>* 【銷售 CRM 前台】 ( 維護 AG Ngx-admin + .NET CORE API ) `2021/10 - 2022/10`</p>
+          <p>* 維護手機 APP RWD 版面與後台之介接，與銷售報表後台視覺化</p>
+
+        </details>
+
+        <details>
+          <summary>[2021/04 - 2022/09] <a href="https://www.pxmart.com.tw/#/index">全聯連鎖超市</a> Web View APP & CMS 後台
+          </summary>
+          <hr>
+          <p>* 【PxPay Web View & APP 管理後台】 ( 開發/維護 AG Ngx-admin + .NET CORE API ) `2021/04 - 2022/09`</p>
+          <p>* 協同網頁設計將 WebView 整合至 APP</p>
+          <p>* 拖移印花集點功能開發</p>
+          <p>* 利用 Ngx-admin 架構開發後台 CMS、CRM 系統</p>
+          <p>* 後端考量效能與資安限制使用 Dapper 搭配 EF 串接資料庫</p>
+
+        </details>
+
+        <details>
+          <summary>[2021/05 - 2021/10] <a href="https://www.raw.com.tw/">赫士盟餐飲集團 </a> 前後端分離前台 & CMS 後台</summary>
+          <hr>
+          <p>* 維護 【Webform 前台官網 / 後台 CMS】 `2021/05 - 2021/10`</p>
+          <p>* RAW 第一版 Webform 系統功能維護</p>
+          <p>* 重構 【Webform => ( 開發/維護 AG Universal SSR + AG Ngx-admin + .NET CORE API ) 前台官網 / 後台 CMS】 `2021/05 -
+            2021/10`
+          </p>
+          <p>* RAW 改為前後端分離，考量 SEO 以 AG Universal 為前台，搭配 AG Ngx-admin 後台，重構 CMS</p>
+
+        </details>
+
+        <details>
+          <summary>[2022/03 - 2022/10] <a href="https://www.yuantabank.com.tw/bank/">元大銀行</a> Web View APP & CMS 後台
+          </summary>
+          <hr>
+          <p>* 【串接投信平台整合原生 APP / WebView】 `2021/06 - 2021/12`</p>
+          <p>* 製作 APP 內新手村模組，整合 WebView 與 APP</p>
+          <p>* 【APP 模組管理後台 ( 開發/維護 AG + .NET CORE API ) 網關 Gateway 跳板】 `2022/03 - 2022/10`</p>
+          <p>* 架構內網網關後串接元大提供之投信 API</p>
+
+        </details>
+
+        <details>
+          <summary>[2022/04 - 2022/10] <a href="https://www.hnamc.com.tw/">華南金資產</a> CMS/CRM 前後端分離 AG + Net Core API
+          </summary>
+          <hr>
+          <p>* 【房屋官網】 ( 開發/維護 AG + .NET CORE API ) `2022/04 - 2022/10`</p>
+          <p>* 重構現有平台建立 BPM + CMS 系統 ( 功能類似新美齊仲介 )</p>
+          <p>* 【戰情室平台】 ( 開發/維護 Vue + .NET CORE API ) `2022/07 - 2022/09`</p>
+          <p>* 重構現有平台整合上述後台，架構雙前台一後台的系統</p>
+
+        </details>
+
+        <details>
+          <summary>[2021/02 - 2021/12] <a href="#">CDP / BI 產品</a> 前後端分離 AG + Net Core API</summary>
+          <hr>
+          <p>* 前期開發 【CDP 串接 BI ( AG Ngx-admin + FineReport + Nginx )】`2021/02 - 2021/12`</p>
+          <p>* 研究 FineReport 初階專案如何利用 Nginx 反向代理，以使用 FineReport 其餘功能</p>
+
+        </details>
+
+      </details>
+
+      <br>
+    </div>
+    <div nz-row class="mt3" id="良興購物網">
+      <p> ✦ <a href="https://www.eclife.com.tw/"> 良興購物網 Liang Shing EcLife </a> , Jr. Web Developer , 電腦系統整合服務業 100~500
+        人
+        , Jul 2019 ~ Feb 2020</p>
+
+      <p>公司為品牌代操兼物流，同時也有自有品牌之乙方公司，擔任網站工程師職位，協同四位夥伴工程師，共同開發與維護多個電子商務平台，品牌前台形象建立與後台 CMS 等相關功能、後台 ERP、SCM、CRM、Workflow
+        等相關功能，每日專案開發、維護管理、新技術重構，團隊合作使用 Scrum、OKR、KPI、TRELLO 任務管理、Git / SVN 版本控制，轉換原因 : 職涯規劃。</p>
+
+      <br>
+
+      <details style="width: 100%;">
+        <br><br><br>
+        <h3>日常開發與維護</h3>
+        <hr>
+        <p>1. **在職期間開發維護幾十個以上的站頁、系統資料庫，幾十支以上的 SQL Server Agent、Winform、Jenkins 排程，十幾個雲與本地 Server**</p>
+        <p>2. **專案較複雜的頁面由設計部門完成頁面切版、 Banner 、 EDM 等 UI，**</p>
+        <p>3. **協同數據發展部與需求單位與工程師討論 UX 並完成。**</p>
+        <p>4. **團隊利用 Scrum、OKR、KPI、TRELLO 任務管理、Git / SVN 版本控制。**</p>
+        <p>5. **工程師團隊工作橫以品牌切割從前端、後端至資料庫與架站、排程。**</p>
+        <p>6. **縱為各品牌之間維護需求或功能新增相互支援。**</p>
+        <br><br>
+        <h3>工作技能</h3>
+        <hr>
+        <p>> C# / VB / MPA / SSR / ASP.NET 4.7 / MVC 5 / WebForm / WebAPI / Winform / NET Core 2.1 / Razor / SPA / CSR /
+          HTML5 / Vue.js etc ...</p>
+
+        <br>
+        <h3>達成目標</h3>
+        <hr>
+        <p>* [兩個禮拜內] 從只會 C# 與較熟悉 .Net MVC ，到熟悉前端 EasyUI 函式庫、後端 .net Webform 框架、 VB 語言。所架構之前台後台系統。</p>
+        <p>* [第三個禮拜至離開前] 協助 CRM 平台專案架構，前端 @Razor 、後端 .net MVC 、 MSSQL 、 IIS 等相關網管協定之架設與程式撰寫、 WebAPI 串接。</p>
+        <p>* [第二個月末至第四個月末] 從不會 Winform 到獨立處理購物中心上架 API 程式，包含十三隻 API 功能，加密與後台 ERP 系統串接。</p>
+        <br><br><br>
+        <h3>工作項目 [專案開發]</h3>
+        <hr>
+        <details>
+          <summary><a href="https://www.eclife.com.tw/">良興電商官網</a> MPA SSR CRM 平台 部分專案</summary>
+
+          <p>* 使用技術 : C# / .NET MVC 5 / SendGrid / Tableau / Power BI / Analytics.js / Embed.js / Chart.js / Google Chat
+            API
+            / Datatables.js / Sourcetree...</p>
+          <p>* 需求: 根據數據分析部需求提供應用。</p>
+          <p>* [實作包含]</p>
+          <p>* `會員 RFM 歸戶 ( B2B 、 B2C ...) 流程優化`</p>
+          <p>* `分類會員 EDM 寄送等相關行銷自動化`</p>
+          <p>* `Datatables 商品 & 會員標籤系統`</p>
+          <p>* `DB 同步、資料清洗、欄位設計、排程預存整理、資料庫備份`</p>
+          <p>* `IIS 架設 DB 建置 Tableau Token 設定`</p>
+          <p>* `報表圖形化與產出`</p>
+          <p>* `串接 SendGrid 電子報系統`</p>
+          <p>* `嵌入 Power BI、Tableau、Google Analytics API 報表顯示與應用`</p>
+          <p>* `架設 Tableau Server`</p>
+          <p>* `串接 Tableau API 並嵌入應用`</p>
+
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/1.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+
+        <details>
+          <summary><a href="https://www.eclife.com.tw/">良興電商</a>( 雅虎 & Momo SCM ) API 串接 MPA SSR 後台 SCM 管理系統 專案
+          </summary>
+
+          <p>* 使用技術 : .NET / Restful API / EasyUi.js / MSSQL / 加密解密編碼 / Winform ...</p>
+          <p>* 需求: 在技術文件不齊全的狀況下，與雅虎業務溝通，加密編碼解密串 API ，將電商商品結構資料抓取，比對公司本身商品結構資料，上架精技商品資料，約 13 支 API 與後台介面 CRUD ，排程系統...
+          </p>
+          <p>* [實作包含]</p>
+          <p>* `Momo & Yahoo API 文件新舊比對`</p>
+          <p>* `與 Momo & Yahoo 業務溝通在無法解決問題情況下找其他方案`</p>
+          <p>* `Java 元件 / 程式碼解意轉為 .NET`</p>
+          <p>* `架設 Java 程式碼環境 Eclipse / 元件建置，擷取正確加密代碼`</p>
+          <p>* `Header AES CBC PKCS5Padding / hmacsha512 加密`</p>
+          <p>* `Header base64 / UTF_8 / Hex 轉碼`</p>
+          <p>* `CookieCollection Stream Request Response 應用`</p>
+          <p>* `取商品結構串接 API`</p>
+          <p>* `反序列化 JsonObject 轉存 SQL ，約 41 種類 8 百多項目，結構化標籤約 15 萬筆`</p>
+          <p>* `後台 ERP 平台，結構畫類別、屬性選單， EasyUi.js 、MSSQL 應用`</p>
+          <p>* `Winform 、Web API 排程串接商品類別序列化提報上架 API`</p>
+          <p>* `協同同事取 Token 將影音圖片 Stream 提報雅虎 Amazon S3 上傳檔案`</p>
+
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/2.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+
+        <details>
+          <summary><a href="https://www.eclife.com.tw/">良興</a> 系統發展部 需求單電子化 專案</summary>
+
+          <p>* 使用技術 : Webform 架構改良之 EasyUi + API 、 Chart.js 、 AJAX 、JQ</p>
+          <p>* 需求: 量化質化系統發展部工作內容，合理安排工作順序、時程管控。</p>
+          <p>* [實作包含]</p>
+          <p>* `UML 需求單流程架構討論`</p>
+          <p>* `MSSQL 資料庫與欄位建置`</p>
+          <p>* `EasyUI 清單建置 CRUD`</p>
+          <p>* `圖表 Chart.js 建置`</p>
+
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/3.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <br><br><br>
+        <h3>工作項目 [需求單開發與維護]</h3>
+        <hr>
+        * MPA SSR 前台 需求單
+        <br>
+        <details>
+          <summary><a href="https://tw-store.msi.com/">MSI 電商代操</a> 動態 Menu 首頁</summary>
+
+          <p></p>* 需求: 根據行銷企劃部需求提供應用。
+          <p></p>* 使用技術 : MPA / SSR /jQ / AJAX / ASP.NET
+          <p></p>* [實作包含]
+          <p></p>* `TSQL 查詢`
+          <p></p>* `AJAX 拋資料`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/5.png?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://myepson.epson.com.tw/">EPSON 電商代操</a> MPA 前台動態 Megamenu / 後台 banner 上稿 CMS</summary>
+
+          <p></p>* 需求: 動態 Menu 改版。
+          <p></p>* 使用技術 : MPA /jQ /AJaX / EasyUI / ASP.NET
+          <p></p>* [實作包含]
+          <p></p>* `CISCO VPN串接`
+          <p></p>* `TSQL 查詢`
+          <p></p>* `AJax 拋資料`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/6.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.aimedia.com.tw/">Aimedia 製造商代操商城</a>春聯廣告頁</summary>
+
+          <p></p>* 需求: 根據行銷企劃部需求提供應用。
+          <p></p>* 使用技術 : jQ DOM / jQ library EasyUI / MPA / AJaX / ASP.NET ...
+          <p></p>* [實作包含]
+          <p></p>* `前台動態頁面`
+          <p></p>* `後台上稿功能`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/7.png?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.sastty.com.tw/">Sastty 美妝電商代操</a> 商品包裝問券頁面、登入送購物金功能</summary>
+
+          <p></p>* 需求: 根據行銷企劃部需求提供應用。
+          <p></p>* 使用技術 : ASP.NET Page / CSS / Javascript / JQ / TSQL
+          <p></p>* [實作包含]
+          <p></p>* `商品說明書上 QR-Code , 拍了之後連到官網問券`
+          <p></p>* `會員登錄`
+          <p></p>* `填寫問券`
+          <p></p>* `送出問券，送購物金`
+          <p></p>* `手機板頁面`
+          <p></p>* `version 2 。 階層權限 Css 樣式覆蓋、 RWD 手機板畫面`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/4.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.sastty.com.tw/">Sastty 美妝電商代操</a> 抽獎活動登入頁面</summary>
+
+          <p></p>* 需求: 基本資料填寫，驗證後存庫。
+          <p></p>* 使用技術 : jQ / Js / Webforms
+          <p></p>* [實作包含]
+          <p></p>* `抽獎頁面驗證登入 Session`
+          <p></p>* `前端頁面套版`
+          <p></p>* `資料傳遞至後端處頁面`
+          <p></p>* `資料驗證`
+          <p></p>* `回傳錯誤訊息`
+          <p></p>* `回傳成功訊息並導入明細抽獎列表頁面`
+          <p></p>* `登入抽獎頁面表單`
+          <p></p>* `後端驗證是否重複序號`
+          <p></p>* `有重複錯誤提示`
+          <p></p>* `無重複存入資料庫並轉回抽獎列表頁面`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/9.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.lab101.asia/">Lab101 美妝代操商城</a> 文章頁面</summary>
+
+          <p></p>* 需求: 新增行銷露出頁面。
+          <p></p>* 使用技術 : Primary CSS / EasyUI.js / ASP.NET / Youtube API
+          <p></p>* [實作包含]
+          <p></p>* `後台 EasyUI 行銷頁面類別與文章新增`
+          <p></p>* `前台 rewrite 分類參數進入類別頁`
+          <p></p>* `後台資料前台樣式套版顯示`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/8.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.lab101.asia/">Lab101 美妝代操商城</a> 產品頁頁面</summary>
+
+          <p></p>* 需求: 訊息不明顯，購物車功能常駐頁面。
+          <p></p>* 使用技術 : JQ / Primary CSS
+          <p></p>* [實作包含]
+          <p></p>* `後台 EasyUI 行銷頁面類別與文章新增`
+          <p></p>* `前台 rewrite 分類參數進入類別頁`
+          <p></p>* `後台資料前台樣式套版顯示`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/8.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <details>
+          <summary><a href="https://www.lab101.asia/">Lab101 美妝代操商城</a> 金流購物車付款頁面</summary>
+
+          <p></p>* 需求: 選擇宅配時顯示地址表單，選擇超商付款時顯示超商 API 串接內容。並將資料傳回資料庫。
+          <p></p>* 使用技術 : JQ / webforms
+          <p></p>* [實作包含]
+          <p></p>* `Webforms Repeater`
+          <p></p>* `webforms contentPlaceHolder`
+          <p></p>* `並在多個頁面內容實作 jQ 、 js 互動效果`
+          <p></p>* `資料驗證`
+          <p></p>* `回傳錯誤訊息`
+          <p></p>* `回傳成功訊息並導入資料庫與跳轉頁面`
+          <p></p>* `物流 API 串接`
+          <br>
+          <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/8.gif?raw=true" width="800"
+            height="640" />
+
+        </details>
+        <br>
+        * ERP CMS EasyUI.js AJAX 後台 需求單
+        <br>
+        <details>
+          <summary><a href="https://www.sastty.com.tw/">Sastty 美妝電商代操</a> 後台抽獎功能清單轉存功能</summary>
+
+          <p></p>* 需求: 後台顯示前台抽獎頁面登入之內容，並有按鈕可以將清單轉出 Excel 。
+          <p></p>* 使用技術 : EasyUI.js
+          <p></p>* [實作包含]
+          <p></p>* `EasyUI 階層設定`
+          <p></p>* `EasyUI 基本顯示`
+          <p></p>* `EasyUI 分頁`
+          <p></p>* `EasyUI 日期查詢顯示`
+          <p></p>* `EasyUI 匯出清單 Excel`
+
+        </details>
+        <details>
+          <summary><a href="https://www.sastty.com.tw/">Sastty 美妝電商代操</a> 後台 banner 上稿系統</summary>
+
+          <p></p>* 需求: 後台顯示前台抽獎頁面登入之內容，並有按鈕可以將清單轉出 Excel 。
+          <p></p>* 使用技術 : MPA /jQ /AJaX / EasyUI.js / ASP.NET
+          <p></p>* [實作包含]
+          <p></p>* `EasyUI 、 Webforms API 混和架構維護`
+          <p></p>* `CISCO VPN 串接`
+          <p></p>* `TSQL 查詢`
+          <p></p>* `AJAX 拋資料`
+
+        </details>
+        <details>
+          <summary><a href=""></a><a href="https://www.eclife.com.tw/">良興</a> 後台會員權限、預存排程管理、報表統計匯出功能、業務綁定報表功</summary>
+
+          <p></p>* 需求: 購物車未結帳資料建置，用以數據發展部測試弱 AI 廣告投放演算與行銷部 KPI 報表統計。
+          <p></p>* 使用技術 : TSQL / C# / .NET / EasyUI.js
+          <p></p>* [實作包含]
+          <p></p>* `EasyUI 、 Webforms API 混和架構維護`
+          <p></p>* `KPI 指標研擬`
+          <p></p>* `TSQL 操作`
+          <p></p>* `預存與 Jenkins 管理`
+          <p></p>* `轉 Excel 報表`
+
+        </details>
+        <br>
+        * Winform 需求單
+        <br>
+        <details>
+          <summary><a href="https://ec.elifemall.com.tw/">全國電子電商代操</a> FTP API 串接 排程載入資料庫</summary>
+
+          <p></p>* 需求: 串接 API 載入 FTP 檔案，轉存資料庫，並設定自動排程。
+          <p></p>* 使用技術 : Winform
+          <p></p>* [實作包含]
+          <p></p>* `Windowsform 排版`
+          <p></p>* `Windowsform 後台程式撰寫`
+          <p></p>* `串接 API 資轉存資料庫並顯示`
+          <p></p>* `時間處理函式導入排程`
+          <p></p>* `ShowDoc php Markdown 文件歸檔`
+
+        </details>
+
+      </details>
+
+    </div>
+  </div>
+  <br><br><br>
+  <h2 id="SideProject">Side Project</h2>
+  <hr>
+  <div #yourElement2 nz-row class="mt3 fdc">
+    <details>
+      <summary><a href="https://github.com/L1uXO330B7/CashFlowProject">錢董財商遊戲</a> SignalR Core 系統架構、前後台腳本產生器開發</summary>
+      <hr>
+      <p></p>* 需求: WebSocket 多人即時遊戲
+      <p></p>* 使用技術 : Angular2 14 / Scss / SignalR Core / Net Core ( Net 6 ) / Swagger ( Web API ) / JWT / Layered
+      Architecture
+      / EF Core
+      <p></p>* [實作包含]
+      <p></p>* `MiniProfiler Pipeline Filter 效能監測與 AOP 全局錯誤處理`
+      <p></p>* `Swagger SQL 語句監測`
+      <p></p>* `前後台腳本產生器開發`
+      <p></p>* `Router / Controllers / Services / Bll / DPL / UnitTests 分層`
+      <p></p>* `Angular2：Components、Pipe、Services、Rxjs`
+      <p></p>* `SignalR Core 搭配 Caching Memory 即時互動`
+      <br>
+      <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/11.gif?raw=true" width="800"
+        height="640" />
+      <br><br><br><br>
+    </details>
+
+    <details>
+      <summary><a href="https://github.com/johch3n611u/Side-Project-Getting-Things-Done">Getting Things Done Tool</a>
+        個人生產力系統</summary>
+      <hr>
+      <p></p>* 需求: 親人需求方便管理階層快速導入的任務管理工具
+      <p></p>* 使用技術 : Vue3 / Firebase / OKR
+      <p></p>* [實作包含]
+      <p></p>* `Getting Things Done 流程`
+      <p></p>* `FireBase Auth`
+      <p></p>* `圖庫 imgur 串接`
+      <p></p>* `Rx.js 多人協同合作、編輯`
+      <br>
+      <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/14.gif?raw=true" width="800"
+        height="640" />
+      <br><br><br><br>
+      <br><br>
+    </details>
+
+    <details>
+      <summary><a href="https://github.com/johch3n611u/Side-Project-Personal-Branding-Image-Web">個人形象網站</a> 前後端分離 AG
+        NetCore Api 開發、展示大學作品</summary>
+      <hr>
+      <p></p>* 需求:
+      <p></p>* 使用技術 : Angular 2+ / .Net Core 2+ / Azure
+      <p></p>* [實作包含]
+      <p></p>* `Landing Page 發想與實作`
+      <p></p>* `特色頁如何呈現個人特色`
+      <p></p>* `作品集頁面如何展現作品特色`
+      <p></p>* `Azure 佈署`
+      <br>
+      <img
+        src="https://github.com/johch3n611u/Side-Project-Personal-Branding-Image-Web/raw/master/Personal-Branding-Image/Site_Reception/img/3.gif?raw=true"
+        width="800" height="640" />
+      <br><br><br><br>
+    </details>
+
+    <details>
+      <summary><a href="https://github.com/johch3n611u/Side-Project-Fabow/tree/master/Fabow">Fabow 任務分配系統</a> PWA
+        漸進式網路應用程式、快速導入易於使用</summary>
+      <hr>
+      <p></p>* 需求: 親人需求方便管理階層快速導入的任務管理工具
+      <p></p>* 使用技術 : Angular2 / Firebase / PWA / Electron.net
+      <p></p>* [實作包含]
+      <p></p>* `OKR、KPI 流程`
+      <p></p>* `FireBase Auth PWA 應用無需後台`
+      <p></p>* `Firebase Cloud Messaging 推播`
+      <p></p>* `Electron.net 桌面版同個 Firebase`
+      <br>
+      <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/13.gif?raw=true" width="800"
+        height="640" />
+      <br><br><br><br>
+    </details>
+
+    <details>
+      <summary><a href="https://github.com/johch3n611u/Side-Project-Fabow/tree/master/Fabow">SecurityAudit Tool</a> 快速篩選
+        Excel 工具</summary>
+      <hr>
+      <p></p>* 需求: 親人需求快速篩選 Excel 工具
+      <p></p>* 使用技術 : Angular2 / Datatables.js / Google Sheet API
+      <p></p>* [實作包含]
+      <p></p>* `串接 Google Sheet API`
+      <p></p>* `Electron.net 桌面版`
+      <p></p>* `取 JSON 動態 key 裡面的資料 Object[KeyName]`
+      <br>
+      <img src="https://github.com/johch3n611u/Side-Project-GoogleSheets-to-WebDatabase/raw/main/final.png?raw=true"
+        width="800" height="640" />
+      <br><br><br><br>
+    </details>
+  </div>
+  <br><br><br>
+  <h2 id="Education">Education</h2>
+  <hr>
+  <div #yourElement3 nz-row class="mt3 fdc">
+    <h3 id="職業訓練局"> ✦ <a href="https://www.taiwanjobs.gov.tw/internet/index/index.aspx"> 職業訓練局 </a> ,
+      移動商務系統設計與開發課程 , Jan 2019 ~ Jul
+      2019</h3>
+    <p>[詳細內容請點擊觀看](https://github.com/johch3n611u/johch3n611u/tree/main/Work/%E8%81%B7%E8%A8%93%E5%B1%80)</p>
+
+    <p></p>此課程為期900小時全日制訓練，主要內容為「Web資訊系統平台開發」及「行動裝置APP開發」兩大領域，<br>
+    <p></p>涵蓋「網站系統開發」、「資料庫設計與開發」、「行動裝置APP開發」、「系統分析與設計」，<br>
+    <p></p>除了開發「行動商務系統平台」所需的各項技能外，還有完整的軟體資訊系統開發過程及方法，<br>
+    <p></p>認識軟體產業之工作內容與生態，結訓後具備軟體開發工程師的各項技能。<br>
+
+    <p>* <a href="https://github.com/johch3n611u/Side-Project-A-Interactive-app-of-Pet-and-Friend">寵物交友平台 (
+        前台寵物交友、後台數據管理 )
+        專題實作</a> , Apr ~ Jul 2019
+      - Framework - ASP.NET - MVC 5 C# & Server-side Render - Razor & Bootstrap 4 & RWD</p>
+
+    <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/10.gif?raw=true" width="800"
+      height="640">
+
+    <h3 style="margin-top: 3rem;" id="輔仁大學景觀建築系">✦ <a href="https://www.landscape.fju.edu.tw/"> 輔仁大學景觀建築系 </a> , 2015 ~
+      2018</h3>
+    <hr>
+    <p></p>[詳細內容請點擊觀看](https://issuu.com/layout1165)
+
+    <p></p>除了設計相關知識和施工技能外，在每一次的專案中培養「發現問題、解決問題」的能力，<br>
+    <p></p>學習從調查、分析中發現問題⾄設計、規劃並解決問題，利用 2D、3D 繪圖、多媒體、模型製作呈現設計理念，<br>
+    <p></p>並於學期間取得乙級造園施工證照，「積極參與國際競賽，磨練團隊合作與累積個人能力」，<br>
+    <p></p>為呈現規劃設計，學期間修習通識課「Web伺服器架設與網頁設計」並找到新的可能性。<br>
+    <p></p>轉換原因 : 求學期間，學習領域廣泛，因此成為職涯規劃中可轉換相似職涯環境與類別。<br>
+
+    <p></p>* [造園施⼯⼄、丙級技術⼠] 全國技術士技能檢定 , Summer 2015
+    <p></p>* [[河廊組⾦獎、鐵橋組銅獎](https://issuu.com/layout1165/docs/___compressed)] ⾼屏溪左岸時代印記創意競賽 - 國際學⽣競圖 , Jan 2017
+    <p></p>* [班級 第⼆名] 饒⽂忠設計成績優異獎 , Summer 2016
+    <p></p>* [入圍] 第⼗⼀屆中華⺠國 - 全國景觀設計學⽣競圖 , Dec 2016
+    <p>* [入圍] 陳⽂成事件紀念廣場 - 創意設計構思競圖 , Jul 2016</p>
+
+    <a href="https://www.youtube.com/embed/QOgFSvcloX8">
+      <img src="https://github.com/johch3n611u/johch3n611u/blob/main/Work/Lansin/Images/12.png?raw=true" width="400"
+        height="270" />
+    </a>
+
+    <h3 style="margin-top: 3rem;" id="義守大學資訊管理系">✦ <a href="https://www2.isu.edu.tw/2018/homepage_v01.php?dept_mno=652">
+        義守大學資訊管理系 </a>
+      , 2013 ~ 2014</h3>
+    <hr>
+    <p>在學期間修習資訊方面理論，「計算機概論」、「資料結構」、</p>
+    <p>「網路概論」、「計算機數學」等專業知識，日後運用助益良多，</p>
+    <p>轉換原因 : 家庭因素轉學。</p>
+  </div>
+</div>
+
+<button *ngIf="!isMobile" class="rightBtn" nz-button nzType="primary" (click)="contactOpen()">
+  <span style="writing-mode: vertical-lr">Contact</span>
+</button>
+
+<nz-drawer [nzBodyStyle]="{ overflow: 'auto' }" nzWidth="20vw" [nzVisible]="contactVisible" [nzClosable]="false"
+  nzTitle="Contact" (nzOnClose)="contactClose()">
+  <ng-container *nzDrawerContent>
+    <p><a href="tel:+886-0912-089-608">Phone：+886-0912-089-608</a></p>
+    <p><a href="mailto:sjmjgd1165@gmail.com">Mail：sjmjgd1165@gmail.com</a></p>
+    <p><a href="https://line.me/ti/p/Ii9J-WBdq6">LineId：lyc1165</a></p>
+  </ng-container>
+</nz-drawer>

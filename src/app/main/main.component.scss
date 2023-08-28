@@ -1,0 +1,240 @@
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-layout {
+  height: 100vh;
+}
+
+.menu-sidebar {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+}
+
+.header-trigger {
+  height: 64px;
+  padding: 20px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s, padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.sidebar-logo {
+  position: relative;
+  height: 64px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #001529;
+  transition: all .3s;
+}
+
+.sidebar-logo img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.sidebar-logo h1 {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+nz-header {
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.app-header {
+  position: relative;
+  height: 64px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+}
+
+nz-content {
+  margin: 24px;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  height: 100%;
+}
+
+td {
+  border: 1px solid #a7a7a7;
+  padding: 6px 13px;
+}
+
+summary {
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+}
+
+details>details {
+  margin: 0 3rem 3rem 3rem;
+}
+
+.leftBtn {
+  border: none;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.rightBtn {
+  border: none;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
+
+.mainBox {
+  background-color: white;
+  margin: 3rem 10rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+  border-radius: 15px;
+  padding: 3rem 6rem;
+}
+
+.aic {
+  align-items: center;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.mt3 {
+  margin-top: 3rem;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.anchorBox {
+  border-left: solid 2px #dddddd;
+  margin-left: 1rem;
+}
+
+.df {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+$smallDevices: 767.98px;
+
+@mixin SmallDevices {
+
+  /* Reduce max-width for small devices */
+  @media(max-width:$smallDevices) {
+    @content;
+  }
+}
+
+@include SmallDevices {
+  .mainBox {
+    margin: unset;
+    width: 100%;
+    padding: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .fdc {
+    flex-direction: unset;
+  }
+
+  .infoBox {
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #dcdcdc;
+    margin-bottom: 1rem;
+
+    img {
+      width: unset;
+      height: unset;
+      margin-bottom: 2rem;
+    }
+
+    .fdc {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .githubImg {
+    img {
+      width: 100%;
+      height: 150px;
+    }
+  }
+
+  .skillBox {
+    overflow: hidden;
+  }
+
+  .skillBox img,
+  .shoolBox img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .rwdTable {
+    th {
+      display: none;
+    }
+
+    td {
+      display: block;
+      width: 100%;
+
+      &:before {
+        content: attr(data-th)": "; // 藉由這個與 html 串聯前綴
+        font-weight: bold;
+        width: 2rem;
+        display: inline;
+      }
+    }
+
+    tbody>tr {
+      border: 1px solid #ddd;
+      margin: 2rem;
+      display: block;
+      padding: 2rem;
+    }
+  }
+}
